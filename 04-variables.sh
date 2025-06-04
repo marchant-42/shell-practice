@@ -1,3 +1,4 @@
+#!/bin/bash
 #sending arguments outside
 PERSON1=$1
 PERSON2=$2
