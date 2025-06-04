@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "trump : what is"
+echo "hello world!"
