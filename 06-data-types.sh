@@ -1,4 +1,4 @@
-NUMBER1=100
+NUMBER1=sivakumar
 NUMBER2=200
 
 TIMESTAMP=$(date)
