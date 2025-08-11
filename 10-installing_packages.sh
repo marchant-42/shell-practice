@@ -9,7 +9,7 @@ else
 
 fi
 
-dnf install mysql -y
+dnf install mysqlfgdffd -y
 
 if [ $? -eq 0 ]; then
     echo "MySQL installed successfully"
