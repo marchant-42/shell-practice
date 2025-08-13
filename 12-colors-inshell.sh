@@ -1,12 +1,13 @@
 #!/bin/bash
 
 USERID=$(id -u)
-R= "\e[31m"
-G= "\e[32m"
-Y= "\e[33m"
-N= "\e[0m"
+R="\e[31m"
+G="\e[32m"
+Y="\e[33m"
+N="\e[0m"
 
-if [ $USERID -ne 0 ]; then
+if [ $USERID -ne 0 ]
+then
     echo -e "$R Error : only root user can run this script $N"
     exit 1
 else 
