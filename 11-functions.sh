@@ -8,7 +8,7 @@ else
     echo "you are running with root access"
 fi
 VALIDATE(){
-    if [ $1 -eq 0 ]; 
+    if [ $1 -eq 0 ]
     then
         echo "installing $2 successfully"
     else
@@ -16,7 +16,7 @@ VALIDATE(){
         exit 1
     fi
 dnf list installed mysql
-if [ $? -ne 0 ]; 
+if [ $? -ne 0 ] 
 then
     echo "MySQL is not installed, proceeding with installation"
     dnf install mysql -y
@@ -25,7 +25,7 @@ else
     echo "MySQL is already installedn nothing to do"
 fi
 dnf list installed python3
-if [ $? -ne 0 ]; 
+if [ $? -ne 0 ] 
 then
     echo "python3 is not installed, proceeding with installation"
     dnf install python3 -y
