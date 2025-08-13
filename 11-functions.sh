@@ -15,6 +15,7 @@ VALIDATE(){
         echo "installing $2 installation failed"
         exit 1
     fi
+}
 dnf list installed mysql
 if [ $? -ne 0 ] 
 then
