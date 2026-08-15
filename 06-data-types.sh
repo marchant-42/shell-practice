@@ -1,4 +1,5 @@
-NUMBER1=satish
+#!/bin/bashNUMBER1=satish
+NUMBER1=100
 NUMBER2=200
 
 TIMESTAMP=$(date)
