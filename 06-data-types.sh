@@ -1,4 +1,5 @@
-#!/bin/bashNUMBER1=satish
+#!/bin/bash
+
 NUMBER1=100
 NUMBER2=200
 
