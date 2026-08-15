@@ -1,7 +1,8 @@
 #!/bin/bash
 
 USERID=$(id -u)
-if [ $USERID -ne 0 ]; then
+if [ $USERID -ne 0 ]; 
+then
     echo "Error : only root user can run this script"
     exit 1
 else 
