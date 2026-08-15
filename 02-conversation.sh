@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bass
 
 echo "trump: hey musk what are you doing"
 echo "musk: I'm working on my new rocket"
