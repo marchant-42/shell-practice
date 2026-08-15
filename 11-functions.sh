@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#marchant of this whole company
 USERID=$(id -u)
 if [ $USERID -ne 0 ]; then
     echo "Error : only root user can run this script"
