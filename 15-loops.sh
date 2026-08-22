@@ -27,7 +27,8 @@ VALIDATE(){
         exit 1
     fi
 }
-for package in ${PACKAGES[@]}
+#for package in ${PACKAGES[@]}#this is for sending arguments through script 
+for package in $@ # this is for we get arguments from git bash
 do 
     dnf list installed $package &>>$LOGS_FILE
     if [ $? -ne 0 ] 
