@@ -45,3 +45,4 @@ then
     
 else
     echo "python3 is already installed nothing to do" &>>$LOGS_FILE
+fi
