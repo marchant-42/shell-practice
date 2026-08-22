@@ -27,20 +27,20 @@ VALIDATE(){
         exit 1
     fi
 }
-dnf list installed mysql
+dnf list installed mysql &>>$LOGS_FILE
 if [ $? -ne 0 ] 
 then
     echo "MySQL is not installed, proceeding with installation" | tee -a $LOGS_FILE
-    dnf install mysql -y | tee -a $LOGS_FILE
+    dnf install mysql -y &>>$LOGS_FILE
     VALIDATE $? "MySQL"
 else
     echo -e "MySQL is $Y already installed nothing to do $N" | tee -a $LOGS_FILE
 fi
-dnf list installed python3
+dnf list installed python3 &>>$LOGS_FILE
 if [ $? -ne 0 ] 
 then
     echo "python3 is not installed, proceeding with installation" | tee -a $LOGS_FILE
-    dnf install python3 -y | tee -a $LOGS_FILE
+    dnf install python3 -y &>>$LOGS_FILE
     VALIDATE $? "python3"
 else
     echo -e "nothing to do python $Y already installed $N" | tee -a $LOGS_FILE
