@@ -44,5 +44,5 @@ then
     VALIDATE $? "python3"
     
 else
-    echo "python3 is already installed nothing to do" &>>$LOGS_FILE
+    echo -e "nothing to do python $Y already installed $N" &>>$LOGS_FILE
 fi
