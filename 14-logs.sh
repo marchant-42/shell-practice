@@ -5,7 +5,7 @@ R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
-echo "satish"
+echo "satisk"
 if [ $USERID -ne 0 ]
 then
     echo -e "$R Error : only root user can run this script $N"
