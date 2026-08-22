@@ -42,7 +42,6 @@ then
     echo "python3 is not installed, proceeding with installation" &>>$LOGS_FILE
     dnf install python3 -y &>>$LOGS_FILE
     VALIDATE $? "python3"
-    
 else
     echo -e "nothing to do python $Y already installed $N" &>>$LOGS_FILE
 fi
